@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #7dccfa;
+    font-size: 0.8rem;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+}
+
+h1, form > article > h2 {
+    text-transform: uppercase;
+
+}
+
+main {
+    
+    position: relative;
+
+    background-color: #000000;
+    background-image: url('../images/people.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 350px;
+
+}
+
+form {
+    width: 240px;
+    padding: 10px;
+    
+    background-color: #e7e7e7b9;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    
+}
+
+.formulario {
+    float: right;
+}
+
+input, select {
+    width: 98%;
+    padding: 5px;
+    margin: 2px;
+
+}
+
+.enviar {
+    background-color: #7dccfa;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.enviar:hover {
+    background-color: #5f9abd;
+    transition-duration: 0.8s;
+
+    
+}
+
+article > h2, article > p {
+    
+    margin-bottom: 10px;
+   
+}
+
+
+form > article> h2 {
+    font-size: 15px;
+}
+
+form > article> p {
+    font-size: 14px;
+}
+
+footer {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    
+
+}
+
+.container {
+    
+    width: 625px;
+    margin: auto;
+}
+
+.itens-footer {
+    display: inline-block;
+    padding: 15px;
+    
+}
+
+img {
+    
+    width: 150px;
+    margin: 10px;
+    margin-bottom: 0;
+}
+
+div > article{
+    display: inline-block;
+    width: 400px;
+    margin: 10px;
+    padding-top: 0;
+    text-align: justify;
+}
+
+@media screen and (max-width: 660px){
+    body {
+        width: 100vw;
+    }
+
+    main {
+    
+        min-height: 450px;
+    
+    }
+
+    h1 {
+        width: 90%;
+    }
+    
+
+    form {
+        width: 90%;
+        padding: 10px;
+        
+        
+        
+        background-color: #e7e7e7b9;
+        border-radius: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+       
+        
+    }
+
+    form > article> h2 {
+        font-size: 25px;
+    }
+    
+    form > article> p {
+        font-size: 20px;
+    }
+    
+
+    .container {
+    
+        width: 100vw;
+        margin: auto;
+    }
+    .itens-footer {
+        width: 100vw;
+    }
+    img {
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+
+    div > article{
+
+        display: block;
+        margin: auto;
+        width: 90%;
+        padding-top: 20px;
+        text-align: justify;
+        
+    }
+
+    
+}

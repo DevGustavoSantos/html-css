@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Cadastro de Alunos</h1>
+        <form action="dados-formulario" method="get">
+            <label for="name">
+                Nome Completo: <br>
+                <input type="text" name="cnome" id="nome" required minlength="2">
+            </label>
+            <br>
+            <label for="bdate">
+                Data de Nascimento: <br>
+                <input type="date" required min="1922-01-12" max="2004-01-12">
+            </label>
+            <label for="gender">
+                Gênero: <br>
+                <select name="gender" id="genero">
+                    <option value="0">---Escolher---</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                    <option value="O">Não Binário</option>
+                </select>
+            </label>
+            <br>
+            <label for="weigth">
+                Peso(kg): <br>
+                <input type="number" min="50" max="200">
+            </label>
+            <label for="heigth">
+                Altura(cm): <br>
+                <input type="number"  min="100" max="250">
+            </label>
+            <br>
+            <label for="activity">
+                Nivel de atividade: <br>
+                <select name="activity" id="natividade">
+                    <option value="0">---Escolher---</option>
+                    <option value="1">Sedentário</option>
+                    <option value="2">Nem lá nem cá</option>
+                    <option value="3">Fitness</option>
+                </select>
+            </label>
+            <label for="object">
+                Objetivo: <br>
+                <select name="object" id="objetivo">
+                    <option value="0">---Escolher---</option>
+                    <option value="1">Perder Gordura</option>
+                    <option value="2">Manter o Peso</option>
+                    <option value="3">Ganhar Massa</option>
+                </select>
+            </label>
+            <br>
+            <label for="sick" required>
+                Possui alguma doença? <br>
+                Sim<input type="radio" name="sick" class="doenca">
+                Não<input type="radio" name="sick" class="doenca" required>
+            </label>
+            <label for="photo">
+                Deseja enviar uma foto? <br>
+                <input type="file" accept="image/*">
+            </label>
+            <br>
+            <label for="obs">
+                Observações Importantes: <br>
+                <textarea name="obs" id="observacoes"></textarea>
+            </label>
+            <br>
+            <label class="termos">
+                <input type="checkbox" required class="check-termos">
+                Declaro que li e aceito os <a href="#">termos de uso.</a>
+            </label>
+            <input type="submit" value="Fazer Cadastro">
+
+        </form>
+    </main>
+</body>
+</html>
