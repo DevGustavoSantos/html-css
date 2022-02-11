@@ -1,0 +1,26 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+     height: 25px;
+}
+
+a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    border: 1px solid;
+    gap: .4rem;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+
+}
+

@@ -1,0 +1,21 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 10vw;
+    width: 80vw;
+    height: 80vw;
+    border: 1px solid;
+    display: flex;
+    gap: .8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fotos {
+    border: 1px solid red;
+    flex: 30%;
+}
